@@ -91,7 +91,7 @@ export default {
 <template>
   <NavBar/>
   <div class="text-lg-center mt-5">
-    <h1 class="text-lg-center">Masukkan nomor surah!</h1>
+    <h1 class="cari text-lg-center">What do you want to Read?</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     <div v-if="cari">
       <div class="mt-5">
@@ -117,5 +117,11 @@ export default {
       </div>
     </div>
   </div>
+
 </template>
 
+<style>
+.cari{
+
+}
+</style>
