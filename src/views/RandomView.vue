@@ -1,4 +1,9 @@
+<script setup>
+import Navbar from "../components/Navbar.vue";
+
+</script>
 <template>
+  <Navbar/>
   <section class="hero is-small">
     <div class="hero-body">
       <p class="title">

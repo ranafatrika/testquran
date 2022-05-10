@@ -13,7 +13,7 @@ export default{
         </button>
       </div>
       <a class="navbar-brand" href="#">MY AL-QURAN | by quran.com</a>
-      <img src="../assets/al5.jpg" alt="" width="40" height="30">
+      <img src="../assets/alq.png" alt="" width="40" height="40">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">

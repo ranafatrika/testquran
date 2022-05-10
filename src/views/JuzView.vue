@@ -1,9 +1,10 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
-
+import NavBar from "../components/navbar.vue";
 
 export default {
+  components: { NavBar },
   data()
   {
     return {
@@ -62,6 +63,7 @@ export default {
 </script>
 
 <template>
+  <NavBar/>
   <div class="text-center mt-5">
     <h2>Juz {{ $route.params.id }}</h2>
     <h4 v-for="quran in isijuz" :key="quran.id" class="text-lg-end mt-5">

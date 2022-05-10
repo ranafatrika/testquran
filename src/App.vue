@@ -66,7 +66,7 @@ export default {
 
   <section v-else>
     <div v-if="loading" class="container">
-      <h1 class="text-center">Loading...</h1>
+      <h1 class="text-center">Wait...</h1>
     </div>
 
     <div v-else class="container">

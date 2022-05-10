@@ -1,8 +1,10 @@
 <script >
 import { ref } from "vue";
 import axios from "axios";
+import NavBar from "../components/navbar.vue";
 
 export default {
+  components: { NavBar },
   data() {
     return {
       cari: "",
@@ -87,6 +89,7 @@ export default {
 </script>
 
 <template>
+  <NavBar/>
   <div class="text-lg-center mt-5">
     <h1 class="text-lg-center">Masukkan nomor surah!</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
