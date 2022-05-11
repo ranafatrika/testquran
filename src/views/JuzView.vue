@@ -71,3 +71,8 @@ export default {
     </h4>
   </div>
 </template>
+<style>
+.text-center{
+ font-family: fontArab;
+}
+</style>

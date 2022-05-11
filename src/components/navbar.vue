@@ -20,26 +20,9 @@ export default{
             <Router-link class="nav-link" aria-current="page" to="/">Home</Router-link>
           </li>
           <li class="nav-item">
-            <Router-link class="nav-link" to="/about">About</Router-link>
+            <Router-link class="nav-link" to="/about">Contact me</Router-link>
           </li>
-          <li class="nav-item">
-            <Router-link class="nav-link" to="/ayat Al-qur'an">Al-Qur'an</Router-link>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-               aria-expanded="false">Surah</a>
-            <ul class="dropdown-menu">
-              <li v-for="surah in surahs" :key="surah.id">
-                <router-link :to="{ name: 'surahs', params: { id: surah.id } }" class="dropdown-item">{{
-                    surah.name_complex
-                  }}</router-link>
-              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <Router-link class="nav-link" to="/randomAyat">Random Ayat</Router-link>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>

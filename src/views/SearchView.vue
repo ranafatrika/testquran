@@ -118,11 +118,13 @@ export default {
     </div>
   </div>
 
+
 </template>
 
 
 <style>
 .cari{
-
+font-family: poppins;
+  font-size: 2rem;
 }
 </style>

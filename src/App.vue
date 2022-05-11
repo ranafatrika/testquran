@@ -74,7 +74,7 @@ export default {
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
              aria-expanded="false">Juz</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu bg-primary">
             <li v-for="juz in juzs" :key="juz.id">
               <router-link :to="{ name: 'juzs', params: { id: juz.id } }" class="dropdown-item">{{ juz.juz_number }}
               </router-link>
@@ -83,8 +83,8 @@ export default {
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-             aria-expanded="false">Surah</a>
-          <ul class="dropdown-menu">
+             aria-expanded="false">Info Surah</a>
+          <ul class="dropdown-menu bg-primary">
             <li v-for="surah in surahs" :key="surah.id">
               <router-link :to="{ name: 'surahs', params: { id: surah.id } }" class="dropdown-item">{{
                   surah.name_complex
@@ -107,5 +107,8 @@ export default {
   margin-top: 3rem;
   font-size: 20px;
   color: black;
+}
+.dropdown{
+  color: #2ac1d0;
 }
 </style>

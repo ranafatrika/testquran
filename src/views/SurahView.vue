@@ -1,8 +1,10 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
+import NavBar from "../components/navbar.vue";
 
 export default {
+  components: { NavBar },
   data()
   {
     return {
@@ -76,8 +78,13 @@ export default {
 </script>
 
 <template>
-  <div class="text-center">
+  <NavBar/>
+  <div class="text-center blockquote">
     <h1>Surah {{ surah.name_complex }}</h1>
     <div v-html="info"></div>
   </div>
 </template>
+<style>
+
+
+</style>

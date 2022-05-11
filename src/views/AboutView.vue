@@ -5,59 +5,57 @@ import Navbar from "../components/Navbar.vue";
 
 <template>
   <navbar />
-  <div class="accordion accordion-flush bg-light mt-5" id="accordionFlushExample">
-    <div class="accordion-item bg-light">
-      <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Contact
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">ig: ranaaa_ftka | fb: Rana Fatrika | twitter: Rana Fatrika | Call me: 081268223669</div>
+  <div class="pesan text-center">Tinggalkan Pesan</div>
+  <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6 form-group mt-3 mt-md-0">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
       </div>
     </div>
-  </div>
-
-  <section class="semua" style="background-color: #E1BA9D;">
+    <div class="form-group mt-3">
+      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group mt-3">
+      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+    </div>
+    <div class="my-3">
+      <div class="loading text-center">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message text-center">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center"><button type="submit">Send Message</button></div>
+  </form>
+  <section class="semua" style="background-color:#87cefa;">
     <section class="page-section" id="team">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">CONTACT</h2>
-          <h3 class="section-subheading">If you want to contact me, just let me know.</h3>
-        </div>
         <div class="row">
           <div class="col-lg-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="/src/assets/1.jpg" alt="..." />
               <h4 class="media"><a target="_blank" href="https://wa.me/6283800945787">
                 Whatsapp
               </a></h4>
-              <p class="tl">083800945787</p>
-              <a class="btn btn-social mx-2"><p class="p1"><a target="_blank" href="https://wa.me/6283800945787">
-                Whatsapp
-              </a></p></a>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="/src/assets/alq2.png" alt="..." />
-              <h4 class="media">Email</h4>
-              <p class="tl">dwityamaudy@gmail.com</p>
-              <a class="btn btn-social mx-2" style="background-image: url('src/assets/alq4.jpg');" href="mailto:dwityamaudy@gmail.com"></a>
+              <h4 class="media"><a target="_blank" href="https://www.instagram.com/ranaaa_ftka">
+                Instagram
+              </a></h4>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="/src/assets/3.png" alt="..." />
-              <h4 class="media">Instagram</h4>
-              <p class="tl">@bentocake.athere</p>
-              <a class="btn btn-social mx-2" style="background-image: url('src/assets/alq2.png');" href="https://www.instagram.com/bentocake.athere/?igshid=YmMyMTA2M2Y="></a>
+              <h4 class="media"><a target="_blank" href="https://www.instagram.com/ranaaa_ftka">
+                Instagram
+              </a></h4>
             </div>
           </div>
         </div>
-      </div>
-    </section>
   </section>
+  </section>
+
 </template>
 
 <script>
@@ -71,6 +69,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.pesan{
+  font-family: poppins;
+  font-size: 25px;
+}
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
