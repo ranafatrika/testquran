@@ -24,9 +24,11 @@ import Navbar from "../components/Navbar.vue";
     <div class="my-3">
       <div class="loading text-center">Loading</div>
       <div class="error-message"></div>
+
+        <button type="submit" class="btn btn-primary text-center">Kirim</button>
+
       <div class="sent-message text-center">Your message has been sent. Thank you!</div>
     </div>
-    <div class="text-center"><button type="submit">Send Message</button></div>
   </form>
   <section class="semua" style="background-color:#87cefa;">
     <section class="page-section" id="team">
@@ -47,8 +49,8 @@ import Navbar from "../components/Navbar.vue";
           </div>
           <div class="col-lg-4">
             <div class="team-member">
-              <h4 class="media"><a target="_blank" href="https://www.instagram.com/ranaaa_ftka">
-                Instagram
+              <h4 class="media"><a target="_blank" href="https://www.facebook.com/profile.php?id=100075545091932">
+                Facebook
               </a></h4>
             </div>
           </div>
